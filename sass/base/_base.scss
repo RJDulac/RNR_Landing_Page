@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  /* root size is 16 pixels divide 10 by 16 = 62.5%. Always base it off of 62.5%. It's standard. This will scale properly if user changes font-size*/
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+}

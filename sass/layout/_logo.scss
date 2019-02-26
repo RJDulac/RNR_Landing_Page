@@ -1,0 +1,17 @@
+.logo {
+  width: 20%;
+
+  &-text {
+    padding-top: 0.3rem;
+    //tinker with flexbox rather than padding-left if time permits
+    padding-left: 1rem;
+    font-size: $small-font-size;
+  }
+  &-container {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+}

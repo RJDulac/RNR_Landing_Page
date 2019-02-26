@@ -1,0 +1,53 @@
+.deal {
+  background: radial-gradient(
+    circle,
+    rgba(240, 61, 37, 1) 0%,
+    rgba(237, 74, 72, 1) 45%,
+    rgba(227, 38, 38, 1) 100%
+  );
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  span {
+    color: white;
+  }
+  a {
+    text-decoration: none;
+  }
+  &-text {
+    padding-top: 1rem;
+    color: white;
+    line-height: $default-line-height;
+  }
+  &-container {
+    &-text {
+      padding: 2rem;
+    }
+    &-img {
+      img {
+        width: 30%;
+        float: left;
+        padding-right: 1rem;
+      }
+    }
+    &-boxes {
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-around;
+      &-icon {
+        padding-left: 0.8rem;
+        width: 23%;
+      }
+      &-one {
+        padding: 1rem;
+      }
+      &-two {
+        background: #9c1f23;
+        padding: 1rem;
+      }
+      span {
+        text-transform: uppercase;
+        padding-left: 0.8rem;
+      }
+    }
+  }
+}

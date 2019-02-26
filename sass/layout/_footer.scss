@@ -1,0 +1,23 @@
+.footer {
+  &-img {
+    width: 100%;
+  }
+  &-container {
+    position: relative;
+    strong {
+      color: white;
+      text-transform: uppercase;
+      position: absolute;
+      top: -5.6rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  &-logo {
+    width: 30%;
+    position: absolute;
+    top: -10rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
