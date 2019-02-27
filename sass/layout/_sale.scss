@@ -2,6 +2,60 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  &-container {
+    &-group {
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    &-text {
+      @media screen and (min-width: 768px) {
+        padding-top: 18rem;
+        padding-right: 14rem;
+        font-size: 2rem;
+      }
+      &:before {
+        @media screen and (min-width: 768px) {
+          //will need another media query for smaller screens
+          top: 75%;
+          bottom: -50%;
+          // top: 75vh;
+          // bottom: -30vh;
+          position: absolute;
+          content: " ";
+          width: 3px;
+          background-color: lightgray;
+          left: 60%;
+        }
+      }
+    }
+  }
+  &-tires {
+    padding-top: 1rem;
+    width: 30%;
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+      width: 30%;
+      height: 30%;
+      margin: 0;
+      padding-top: 1rem;
+      padding-right: 6rem;
+    }
+  }
+  &-off {
+    display: inline-block;
+    background: #00baff;
+    color: white;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    @media screen and (min-width: 768px) {
+      padding: 0.6rem 2rem 0.6rem 2rem;
+    }
+  }
   &-title {
     padding-bottom: 1rem;
     color: $primary-color;
@@ -12,15 +66,17 @@
     &-red {
       color: $primary-color;
     }
+    @media screen and (min-width: 768px) {
+      padding-bottom: 1.5rem;
+      font-size: 1.6rem;
+    }
   }
-  &-off {
-    display: inline-block;
-    background: #00baff;
-    color: white;
-    padding: 0.6rem;
-  }
+
   &-space {
     padding-bottom: 1rem;
+    @media screen and (min-width: 768px) {
+      padding: 0;
+    }
   }
   &-line {
     border: 0;
@@ -29,29 +85,42 @@
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
     width: 85%;
     margin: 0 auto 0 auto;
-  }
-  &-tires {
-    padding-top: 1rem;
-    width: 30%;
-    margin-left: auto;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
   &-info {
-    padding-top: 2rem;
     display: flex;
     flex-direction: column;
+    &-container {
+      padding-bottom: 2rem;
+    }
     &-row {
       display: flex;
       justify-content: center;
+      @media screen and (min-width: 768px) {
+        justify-content: flex-end;
+        padding-right: 7rem;
+        padding-bottom: 4rem;
+      }
     }
     &-check {
       padding-right: 1rem;
       width: 8%;
       height: 8%;
+      @media screen and (min-width: 768px) {
+        width: 6%;
+        height: 6%;
+      }
     }
+
     &-text {
       padding-top: 0.8rem;
       padding-right: 1rem;
       text-transform: uppercase;
+      @media screen and (min-width: 768px) {
+        padding-top: 2.5rem;
+      }
     }
   }
 }

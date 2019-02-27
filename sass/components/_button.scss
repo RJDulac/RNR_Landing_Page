@@ -13,20 +13,11 @@
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
+  @media screen and (min-width: 768px) {
+    font-size: 1.6rem;
+    border: 2px solid white;
+    padding: 15px 55px;
+    top: 2.5rem;
+    right: 2.5rem;
+  }
 }
-//for desktop
-// .btn-shop {
-//   text-decoration: none;
-//   font-size: 1.6rem;
-//   background: #d92e2e;
-//   color: white;
-//   border-radius: 25px;
-//   border: 2px solid white;
-//   display: inline-block;
-//   padding: 15px 55px;
-//   margin-top: 5rem;
-
-//   // /* maybe use flexbox instead. Less hacky but more markup */
-//   // position: relative;
-//   // float: right;
-// }

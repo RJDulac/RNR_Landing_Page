@@ -1,11 +1,17 @@
 .logo {
   width: 20%;
+  @media screen and (min-width: 768px) {
+    //change size in photoshop later
+    width: 10%;
+  }
 
   &-text {
-    padding-top: 0.3rem;
-    //tinker with flexbox rather than padding-left if time permits
-    padding-left: 1rem;
     font-size: $small-font-size;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      padding-left: 0.8rem;
+      font-size: 1.6rem;
+    }
   }
   &-container {
     padding-top: 1rem;
